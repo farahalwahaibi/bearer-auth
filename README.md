@@ -28,14 +28,46 @@
    
 
 ## **Tests**
-* **404** on a bad route
-* **404** on a bad method
-* The correct status codes and returned data for each REST route
-  * Create a record using POST
-  * Read a list of records using GET
-  * Read a record using GET
-  * Update a record using PUT
-  * Destroy a record using DELETE
+* **Unit Tests:** npm run test (tests for server, routes, and user model currently implemented):
+
+  * Auth Middleware
+    * user authentication
+      ✓ fails a login for a user (admin) with the incorrect basic credentials 
+      ✓ logs in an admin user with the right credentials 
+      
+  * Auth Router
+    * admin users
+      ✓ can create one 
+      ✓ can signin with basic 
+      ✓ can signin with bearer 
+    * bad logins
+      ✓ basic fails with known user and wrong password 
+      ✓ basic fails with unknown user 
+      ✓ bearer fails with an invalid token 
+      ✓ basic fails with known user and wrong password  
+      ✓ basic fails with unknown user 
+      ✓ bearer fails with an invalid token 
+      ✓ basic fails with known user and wrong password  
+      ✓ basic fails with unknown user 
+      ✓ bearer fails with an invalid token 
+    * editor users
+      ✓ can create one 
+      ✓ can signin with basic 
+      ✓ can signin with bearer 
+    * user users
+      ✓ can create one 
+      ✓ can signin with basic 
+      ✓ can signin with bearer 
+      
+  * Auth Middleware
+    * user authentication
+      ✓ fails a login for a user (admin) with an incorrect token 
+      ✓ logs in a user with a proper token
+      
+* **Lint Tests:** npm run lint
+
+![test1](2.JPG)
+![test2](3.JPG)
 
 ***
 
