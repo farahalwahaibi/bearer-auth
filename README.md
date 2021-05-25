@@ -26,8 +26,8 @@
   * "morgan"
 
 * **devDependencies :**
-  * eslint": "^7.27.0",
-  * "jest": "^26.6.3",
+  * eslint"
+  * "jest"
   * "supertest"
 
 
