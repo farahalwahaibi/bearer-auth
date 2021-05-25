@@ -15,18 +15,17 @@
 * .env requirements
   * **PORT** - 3000
   * **MONGOOSE_URI**
-  * **SECRET**
+  * **SECRET** - used to create jwt
 
 
 ## **Running the app**
 * **npm start**
 * **Endpoints:**
-   * **/food** or **/clothes** will return a json list of all current data 
-   * **/food/:id** or **/clothes/:id** will return specific data for specific id
-   * **POST** requests to **/food** or **/clothes** will create new data 
-   * **PUT** requests to **/food/:id** or **/clothes/:id** will update current data depends on it's provided id
-   * **DELETE** requests to **/food/:id** or **/clothes/:id** will delete specific data depends on it's provided id
-
+   * **https://bearer-auth-2021.herokuapp.com/** home route (/)
+   * **https://bearer-auth-2021.herokuapp.com/signup** for signup (/signup)
+   * **https://bearer-auth-2021.herokuapp.com/signin** for signin (/signin)
+   * **https://bearer-auth-2021.herokuapp.com/users** for get users (/users)
+   
 
 ## **Tests**
 * **404** on a bad route
