@@ -24,7 +24,10 @@ users.virtual('token').get(function () {
   let tokenObject = {
     username: this.username,
   }
-  return jwt.sign(tokenObject, process.env.SECRET)
+  return jwt.sign(tokenObject, process.env.SECRET,
+  // The expireIn property added because of this requirement in the lab assignment //
+  //Add support for the creation and usage of time sensitive (valid for 15 minutes) JWTs//
+    {expiresIn: '15m'})
 });
 
 users.pre('save', async function () {
