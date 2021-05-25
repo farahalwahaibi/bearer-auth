@@ -23,6 +23,11 @@ app.use( express.urlencoded( { extended: true } ) );
 // Routes
 app.use( authRoutes );
 
+// Home Route
+app.get( '/',( req,res )=>{
+  res.send( 'Welcome! We are over the moon to share time with you and make memories!!!' );
+} );
+
 // Catchalls
 ///////////////////////////////////////////////////////////////////
 ////////1st error we need to add ('*') for notFound handler///////
