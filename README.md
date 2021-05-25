@@ -44,9 +44,10 @@
 * **npm start**
 * **Endpoints:**
    * **https://bearer-auth-2021.herokuapp.com/** home route (/)
-   * **https://bearer-auth-2021.herokuapp.com/signup** for signup (/signup)
-   * **https://bearer-auth-2021.herokuapp.com/signin** for signin (/signin)
-   * **https://bearer-auth-2021.herokuapp.com/users** for get users (/users)
+   * **https://bearer-auth-2021.herokuapp.com/signup** for create (/signup)
+   * **https://bearer-auth-2021.herokuapp.com/signin** for login (/signin)
+   * **https://bearer-auth-2021.herokuapp.com/users** for get (/users)
+   * **https://bearer-auth-2021.herokuapp.com/secret** for get (/secret)
    
 
 
@@ -98,7 +99,7 @@
 ## **UML Diagram**
 
 
-![uml-diagram](Capture.JPG)
+![uml-diagram](1.JPG)
 
 
 ***Thank you!!***
